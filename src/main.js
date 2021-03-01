@@ -1,9 +1,14 @@
 import Vue from 'vue'
+import axios from 'axios'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 Vue.config.productionTip = false
+Vue.config.token = ''
+axios.defaults.baseURL = ''
+axios.defaults.timeout = 5000
+axios.defaults.withCredentials = false
 
 const routerCfg= [
   {
